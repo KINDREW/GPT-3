@@ -1,0 +1,27 @@
+.register {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  /* background: red; */
+  background: gray;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+.register h1 {
+  font-size: 25px;
+}
+
+.register button {
+  padding: 20px 40px;
+  border-radius: 30px;
+  border: none;
+  width: 180px;
+  font-size: 18px;
+  font-weight: 700;
+  background: black;
+  color: white;
+}

@@ -1,0 +1,40 @@
+.openAi {
+  display: flex;
+  /* background: red; */
+  justify-content: space-between;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+h1 {
+  color: black;
+}
+
+.openAi div,
+small {
+  color: rgb(79, 76, 76);
+}
+
+.future {
+  /* background: rebeccapurple; */
+  width: 70%;
+}
+
+.future small {
+  color: black;
+}
+
+.list0 {
+  /* background: royalblue; */
+  width: 30%;
+  padding-left: 50px;
+}
+
+.list,
+.list1 {
+  margin-top: 50px;
+}
+
+.List0 {
+  width: 50%;
+  padding-left: 50px;
+}

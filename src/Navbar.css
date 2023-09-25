@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* background: red; */
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+
+/* .right-nav {
+  margin-right: 50px;
+} */
+
+.signup {
+  background: grey;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.signin {
+  padding: 10px 20px;
+}
+
+ul > * {
+  display: inline;
+  margin-left: 30px;
+}
