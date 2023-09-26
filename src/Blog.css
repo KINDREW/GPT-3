@@ -1,0 +1,60 @@
+.blog {
+  padding-left: 150px;
+  padding-right: 150px;
+  background: white;
+  padding-top: 100px;
+  margin-top: 200px;
+  padding-bottom: 50px;
+}
+
+.blogs {
+  display: flex;
+  flex-direction: row;
+  /* background: red; */
+}
+
+.z {
+  margin-bottom: 50px;
+}
+
+.baako {
+  /* background: white; */
+  width: 70%;
+  margin-right: 50px;
+  border: 0.00001px dashed rgb(182, 174, 174);
+  height: fit-content;
+  padding-bottom: 100px;
+  /* padding-bottom: -160px; */
+}
+
+.baako img {
+  width: 100%;
+  background: black;
+}
+.baako div {
+  padding: 20px;
+}
+.pl {
+  /* background: lawngreen; */
+  margin-top: 250px;
+  /* margin-bottom: 50px; */
+}
+
+.meinu {
+  /* background: white; */
+  width: 70%;
+  margin-right: 50px;
+}
+.meinu img {
+  width: 100%;
+  background: black;
+}
+
+.meinsa {
+  margin-bottom: 50px;
+  border: 0.00001px dashed rgb(182, 174, 174);
+}
+
+.lal {
+  margin-bottom: 50px;
+}

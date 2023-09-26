@@ -1,0 +1,32 @@
+.footer {
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  background: rgb(210, 207, 207);
+  padding: 50px;
+}
+
+.pp {
+  text-align: center;
+}
+
+.mid {
+  text-align: center;
+  border: 1px solid black;
+  width: fit-content;
+  align-self: center;
+  padding: 10px 20px;
+}
+
+.down {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.down ul > li {
+  display: block;
+  margin-top: 20px;
+}
