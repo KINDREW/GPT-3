@@ -58,3 +58,45 @@
 .lal {
   margin-bottom: 50px;
 }
+
+@media (max-width: 768px) {
+  .blog {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .blogs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .z {
+    margin-left: 50px;
+  }
+
+  .meinu {
+    width: 60%;
+  }
+
+  .baako {
+    width: 60%;
+    padding-bottom: 0px;
+  }
+
+  .pl {
+    margin: 0;
+  }
+}
+
+@media (max-width: 426px) {
+  .meinu {
+    width: 70%;
+  }
+
+  .baako {
+    width: 70%;
+    padding-bottom: 0px;
+  }
+}

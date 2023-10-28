@@ -25,3 +25,24 @@
   background: black;
   color: white;
 }
+
+@media (max-width: 768px) {
+  .register {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 426px) {
+  .register {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .register button {
+    margin-top: 20px;
+  }
+}

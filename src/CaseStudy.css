@@ -18,3 +18,13 @@
   /* background: red; */
   width: 70%;
 }
+
+@media (max-width: 768px) {
+  .casestudy {
+    margin: 0;
+  }
+
+  .casestudy img {
+    display: none;
+  }
+}

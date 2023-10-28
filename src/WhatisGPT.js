@@ -16,8 +16,7 @@ const WhatisGPT = () => {
         </div>
         <div className="second">
           <h1>
-            The posibilities are beyond <br />
-            your imagination
+            The posibilities are beyond <br /> your imagination
           </h1>
           <small>Explore the library</small>
         </div>

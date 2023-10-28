@@ -1,8 +1,28 @@
 import "./Navbar.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link as ScrollLink, Element } from "react-scroll";
 
 const Navbar = () => {
+  const targetRef = useRef(null);
+  const targetRef2 = useRef(null);
+
+  const sideMenu = () => {
+    const navbar = targetRef.current;
+    const bar = targetRef2.current;
+
+    if (navbar) {
+      if (navbar.classList.contains("menu")) {
+        navbar.classList.remove("menu");
+        navbar.classList.add("appear");
+        bar.classList.add("change");
+      } else {
+        navbar.classList.remove("appear");
+        bar.classList.remove("change");
+        navbar.classList.add("menu");
+      }
+    }
+  };
+
   const [scrolling, setScrolling] = useState(false);
 
   useEffect(() => {
@@ -25,7 +45,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolling ? "scrolled" : ""}`}>
       <div className="left-nav">
         <h1>GPT - 3</h1>
-        <ul>
+        <ul className="menu" ref={targetRef}>
           <li>
             <ScrollLink
               activeClass="active"
@@ -34,6 +54,7 @@ const Navbar = () => {
               smooth={true}
               offset={-70} // Adjust this offset as needed
               duration={500}
+              onClick={sideMenu}
             >
               Home
             </ScrollLink>
@@ -45,6 +66,7 @@ const Navbar = () => {
               smooth={true}
               offset={-70} // Adjust this offset as needed
               duration={500}
+              onClick={sideMenu}
             >
               What is GPT
             </ScrollLink>
@@ -56,6 +78,7 @@ const Navbar = () => {
               smooth={true}
               offset={-70} // Adjust this offset as needed
               duration={500}
+              onClick={sideMenu}
             >
               Open AI
             </ScrollLink>
@@ -67,6 +90,7 @@ const Navbar = () => {
               smooth={true}
               offset={-70} // Adjust this offset as needed
               duration={500}
+              onClick={sideMenu}
             >
               Case Studies
             </ScrollLink>
@@ -78,15 +102,26 @@ const Navbar = () => {
               smooth={true}
               offset={-70} // Adjust this offset as needed
               duration={500}
+              onClick={sideMenu}
             >
               Library
             </ScrollLink>
           </li>
+          <div className="right-nav2">
+            <span className="signin">Sign in</span>
+            <span className="signup">Sign up</span>
+          </div>
         </ul>
       </div>
       <div className="right-nav">
         <span className="signin">Sign in</span>
         <span className="signup">Sign up</span>
+      </div>
+
+      <div class="bar" onClick={sideMenu} ref={targetRef2}>
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
     </nav>
   );

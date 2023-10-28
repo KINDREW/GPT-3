@@ -5,6 +5,10 @@
   margin-left: 150px;
   margin-right: 150px;
 }
+
+.broo {
+  display: flex;
+}
 h1 {
   color: black;
 }
@@ -37,4 +41,32 @@ small {
 .List0 {
   width: 50%;
   padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .openAi {
+    margin: 0;
+    flex-direction: column;
+    padding-left: 50px;
+  }
+
+  .future {
+    width: 100%;
+  }
+
+  .broo {
+    display: flex;
+
+    width: 100%;
+  }
+}
+
+@media (max-width: 426px) {
+  .future h1 {
+    font-size: 20px;
+  }
+
+  .list0 {
+    padding: 0;
+  }
 }

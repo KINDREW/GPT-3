@@ -1,6 +1,4 @@
 .navbar {
-  position: sticky;
-  top: 0;
   /* z-index: -1; */
   display: flex;
   flex-direction: row;
@@ -23,10 +21,6 @@
   align-items: center;
 }
 
-/* .right-nav {
-  margin-right: 50px;
-} */
-
 .signup {
   background: grey;
   padding: 10px 20px;
@@ -39,4 +33,148 @@
 ul > * {
   display: inline;
   margin-left: 30px;
+}
+
+.right-nav2 {
+  display: none;
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0;
+    margin: 0;
+  }
+
+  .left-nav {
+    padding-left: 30px;
+  }
+
+  .bar {
+    /* position: absolute; */
+    /* background: red; */
+    margin-right: 20px;
+    margin-top: 10px;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 30px;
+
+    background: black;
+    margin: 7px 3.2px;
+    /* transition: all 1s ease; */
+  }
+  .bar1 {
+    /* transition: all 1s ease; */
+
+    height: 1px;
+  }
+
+  .bar2 {
+    /* transition: all 1s ease; */
+
+    height: 2px;
+  }
+
+  .bar3 {
+    /* transition: all 1s ease; */
+
+    height: 3px;
+  }
+  .change .bar1 {
+    transform: rotate(45deg) translate(10px, -3px);
+    height: 3px;
+    /* transition: all 1s ease; */
+    margin-top: 20px;
+    background: black;
+    margin-right: 5px;
+    /* margin-bottom: 15px; */
+  }
+  .change .bar2 {
+    /* transform: rotate(45deg) translate(10px, 10px); */
+    opacity: 0;
+  }
+  .change .bar3 {
+    transform: rotate(-45deg) translate(15px, -4px);
+    height: 3px;
+    /* transition: all 1s ease; */
+    background: black;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  .menu {
+    /* height: 0;
+    overflow: hidden; */
+    display: none;
+    transition: all 1s ease-in-out;
+  }
+
+  .appear {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    position: absolute;
+    left: 59.5%;
+    top: 6%;
+    width: 26%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 70px;
+    /* background: red; */
+    background: gainsboro;
+    margin: 0;
+    transition: all 1s ease-in-out;
+    border: 1px solid gainsboro;
+  }
+
+  .left-nav li {
+    margin-top: 10px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .right-nav2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .signin {
+    border-bottom: 1px solid gray;
+
+    width: 100%;
+    text-align: center;
+  }
+
+  .signup {
+    margin-top: 20px;
+  }
+
+  .right-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 426px) {
+  .appear {
+    left: 34.9%;
+    top: 6.9%;
+    width: 38%;
+  }
+}
+@media (max-width: 376px) {
+  .appear {
+    left: 31.9%;
+    top: 6.9%;
+    width: 38%;
+  }
 }
